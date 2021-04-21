@@ -1,18 +1,22 @@
 /* Estilos da página index.html*/
+/*{
+   margin: 0;
+   padding: 0;
+}*/
 
 body{
     font-family: tahoma,sans-serif;
-    padding: 0;
-    margin: 0;
+    color:white;
     width: 1024px;
-    margin: auto;
-    /*background-image: url("asset/img/MinhaGalaxia18.04.png");
-    background-repeat: no-repeat;*/
-}
+    padding: 0;
+    margin: 50px auto;
+    background-color: rgb(17, 20, 17);
+    
+}   
 
 #menu {
     background-color: #181d18;
-    text-align: right;
+    text-align: left;
     padding: 15px;
  }
  
@@ -23,23 +27,29 @@ body{
  
  #menu li a {
     text-decoration: none;
-    color: white;
+    color:#426445 ;
     letter-spacing: 4px;
     text-transform: uppercase;
     font-size: 12px;
-    transition: .3s rgb(211, 190, 157) linear;
+    transition: color .3s linear;
  }
  
  #menu li a:hover {
-    color: #82c782;
+    color:white;
  }
 
 
 .center {
     text-align: center;
+    text-transform: uppercase;
+ }
+
+ .left{
+   text-align: left;
+   margin-left: 5%;
  }
  
- .justify{
+.justify{
     text-align: justify;
  }
  
@@ -50,27 +60,47 @@ body{
     align-items: center;
  } 
 
- .img-100{
-     width: 1 00%;
+ .fantasy{
+font-family: cursive;
+color: rgb(59, 236, 5);
+text-align: right;
+margin-right: 5%;
+text-transform: uppercase;
+}
+
+.img-100{
+     width: 450%;
  }
 
- .p-30 {
+.p-30 {
     padding: 20px;
     line-height: 2;
-    text-align: center;
+    text-align: left;
+    margin-left: 50%;
 
  }
-
-
-  
- .wh-300{
-    width: 300px;
-    height: 300px;
  
+.br-50 {
+   border-radius: 50%;
+}
+
+.wh-300{
+   width: 300px;
+   height: 300px;
+
+}
+
+.mb-50{
+   margin-bottom: 50px;
  }
 
+.card{
+   float: left;
+   width: 32%;
+   text-align: center;
+}
 
- .rodape p{
+.rodape p{
     background-color: #181d18;
     color: white;
     text-align: center;
@@ -81,5 +111,38 @@ body{
 /* Estilos da página contato.html*/
 
 .ml-50 {
-    margin-left: 50px;
+    margin-left: 60px;
  }
+
+ .br-2{
+   border: 2px solid #426445;
+   border-radius: 8px;
+
+ }
+
+.btn{
+   padding: 1em;
+   border-radius: 8px;
+   background: transparent;
+   border: 2px solid #426445;
+   font-size: 1em;
+   color: white;
+   cursor: pointer;
+   position: relative;
+}
+
+.btn::before{
+   content: '';
+   position: absolute;
+   background:#426445;
+   height: 100%;
+   width: 0;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   transition: all .5s ease;
+}
+
+.btn:hover::before{
+   width: 100%;
+}
