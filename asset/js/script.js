@@ -77,8 +77,7 @@ function mapaNormal() {
     mapa.style.width = '400px'
     mapa.style.height = '250px'
 }
-
-
+/*preciso arrumar isso */
 minhaImg.onclick = function () {
     let meuSrc = minhaImg.getAttribute('src')
     if (meuSrc === 'img/rickmorty.png') {
